@@ -1,0 +1,55 @@
+package keywordsandcustom;
+
+ class practice12{
+	   void divide()throws ArithmeticException{
+		   int a=10,b=0,result;
+		   result=a/b;
+		   System.out.println("the result is:"+result);
+	   }
+}
+
+public class keywordsandcustom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  // throw use
+//		  int a=10;
+//		  int b=5;
+//		  try {
+//			  if(a>b) {
+//				  throw new Exception();
+//			  }
+//		  }catch(Exception e) {
+//			  System.out.println(e.toString());
+//		  }
+//			throws use
+//	  practice12 p1=new practice12();
+//	  try {
+//	 	 p1.divide();
+//	  }catch(ArithmeticException e) {
+//	 	 System.out.println("not done this operation"+e.getMessage());
+//	  }
+//	  System.out.println("done");
+//	}
+		//finally 
+//		int a=10;
+//		int b=0;
+//		try {
+//			int res=a/b;
+//			System.out.println("the result is:"+res);
+//		}catch(ArithmeticException e) {
+//			System.out.println("the operation not performed due to:"+e.getLocalizedMessage());
+//		}finally {
+//			System.out.println("the result is obtained");
+//		}
+		// custom
+		try {
+			throw new Exception("yes");
+		}catch(Exception e) {
+			System.out.println("done "+e.getMessage());
+			
+		}
+		
+	}	
+
+}

@@ -1,0 +1,23 @@
+package keywordsandcustom;
+interface one{
+	public default void show() {
+		System.out.println("one default");
+	}
+}
+interface two{
+	public default void show() {
+		System.out.println("two default");
+	}
+}
+class Example implements one,two{
+	public void show() {
+		one.super.show();
+		two.super.show();
+	}
+}
+public class diamondproblem {
+public static void main(String args[]) {
+	Example e1=new Example();
+	e1.show();
+}
+}
